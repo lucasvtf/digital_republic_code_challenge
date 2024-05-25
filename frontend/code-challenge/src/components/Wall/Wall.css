@@ -1,0 +1,96 @@
+/* WallForm.css */
+
+.form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.walls-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.wall-card {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.remove-btn {
+  background-color: #dc3545;
+}
+
+button.remove-btn:hover {
+  background-color: #c82333;
+}
+
+button.add-btn {
+  background-color: #28a745;
+  margin-top: 20px;
+}
+
+button.submit-btn {
+  background-color: #007bff;
+  margin-top: 20px;
+}
+
+button.add-btn:hover {
+  background-color: #218838;
+}
+
+button.submit-btn:hover {
+  background-color: #0056b3
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
