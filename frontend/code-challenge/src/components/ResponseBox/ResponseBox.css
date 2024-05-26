@@ -1,0 +1,39 @@
+.response-box {
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.response-box.success {
+  background-color: #28a745;
+  border: 1px solid #218838;
+}
+
+.response-box.error {
+  background-color: #dc3545;
+  border: 1px solid #c82333;
+}
+
+.ok-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ok-btn:hover {
+  background-color: #0056b3;
+}
