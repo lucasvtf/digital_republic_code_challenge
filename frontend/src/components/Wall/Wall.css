@@ -60,26 +60,9 @@ button:hover {
   background-color: #0056b3;
 }
 
-button.remove-btn {
-  background-color: #dc3545;
-}
-
-button.remove-btn:hover {
-  background-color: #c82333;
-}
-
-button.add-btn {
-  background-color: #28a745;
-  margin-top: 20px;
-}
-
 button.submit-btn {
   background-color: #007bff;
   margin-top: 20px;
-}
-
-button.add-btn:hover {
-  background-color: #218838;
 }
 
 button.submit-btn:hover {
