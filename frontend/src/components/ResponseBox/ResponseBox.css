@@ -1,31 +1,38 @@
+/* ResponseBox.css */
+
 .response-box {
-  padding: 15px 20px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 8px;
   font-size: 16px;
-  color: #fff;
+  color: #000000;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 400px;
+  max-width: 90%;
   text-align: center;
 }
 
+.response-box p {
+  margin: 10px 0;
+}
+
 .response-box.success {
-  background-color: #28a745;
-  border: 1px solid #218838;
+  border: 5px solid #28a745;
 }
 
 .response-box.error {
-  background-color: #dc3545;
-  border: 1px solid #c82333;
+  border: 5px solid #dc3545;
 }
 
 .ok-btn {
   margin-top: 15px;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 16px;
   color: #fff;
   background-color: #007bff;
   border: none;

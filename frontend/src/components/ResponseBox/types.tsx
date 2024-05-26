@@ -1,5 +1,13 @@
-export type ResponseBoxProps = {
+export type SuccessResponse = {
+  tintaNecessaria: string;
+  latasSugeridas: Record<string, number>;
+};
+
+export type ErrorResponse = {
   message: string;
-  type: 'success' | 'error';
+};
+
+export type ResponseBoxProps = {
+  responseData: SuccessResponse | ErrorResponse;
   onClose: () => void;
 };
