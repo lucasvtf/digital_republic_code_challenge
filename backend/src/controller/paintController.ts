@@ -5,15 +5,12 @@ import { UnprocessableEntityError } from '../errors/unprocessableEntityError';
 
 export default (req: Request, res: Response, next: NextFunction) => {
   try {
-    const walls = req.body as Wall[];
-    console.log(walls, req.body);
+    const walls = req.body.walls as Wall[];
     const paintService = new CalculatePaintRequirements(walls);
     const { suggestedCans, necessaryPaint } = paintService.calculate();
     return res.status(StatusCodes.OK).json({
-      response: {
-        tintaNecessaria: necessaryPaint,
-        latasSugeridas: suggestedCans,
-      },
+      tintaNecessaria: necessaryPaint,
+      latasSugeridas: suggestedCans,
     });
   } catch (error) {
     return next(new UnprocessableEntityError(error.message));
