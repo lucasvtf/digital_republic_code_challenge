@@ -12,7 +12,7 @@ const WallForm = () => {
       walls: Array(4).fill({ height: 0, width: 0, doors: 0, windows: 0 }),
     },
   });
-  const { fields, append, remove } = useFieldArray({
+  const { fields } = useFieldArray({
     control,
     name: 'walls',
   });
