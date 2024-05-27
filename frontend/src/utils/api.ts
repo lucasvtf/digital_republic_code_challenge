@@ -1,7 +1,7 @@
 import { FormValues } from '../components/Wall/types';
 
 const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8000';
-console.log(apiUrl);
+
 export const submitFormData = async (formData: FormValues) => {
   try {
     const url = `${apiUrl}/calculate`;
