@@ -1,6 +1,7 @@
 import { FormValues } from '../components/Wall/types';
 
-const apiUrl = process.env.API_URL || 'http://localhost:8000';
+const apiUrl =
+  process.env.API_URL || 'https://digital-republic-code-challenge.onrender.com';
 
 export const submitFormData = async (formData: FormValues) => {
   try {
