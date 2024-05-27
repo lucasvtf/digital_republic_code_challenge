@@ -58,7 +58,7 @@ export class CalculatePaintRequirements implements IPaintRequirements {
         throw new Error(
           `A altura da parede ${
             index + 1
-          } deve ser no minimo 30cm mais alta que a altura da porta.`
+          } deve ser no mínimo 30cm mais alta que a altura da porta.`
         );
       }
       return { width, height, doors, windows };
