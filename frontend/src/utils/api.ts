@@ -1,8 +1,11 @@
 import { FormValues } from '../components/Wall/types';
 
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+console.log(apiUrl);
 export const submitFormData = async (formData: FormValues) => {
   try {
-    const response = await fetch('http://localhost:8000/calculate', {
+    const url = `${apiUrl}/calculate`;
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
