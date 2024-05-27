@@ -38,3 +38,13 @@ docker-compose up --build
 
 O frontend estará disponível em http://localhost:3000 e o backend em http://localhost:8000
 
+
+### Para rodar os testes.
+
+```bash
+cd backend
+npm install
+npm run test
+```
+
+
